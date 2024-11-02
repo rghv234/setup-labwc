@@ -176,7 +176,7 @@ for svc in networking networkmanager elogind polkit greetd; do rc-service $svc r
 
 # Install and configure Labwc
 apk add labwc labwc-doc dunst redshift grim wl-clipboard clipman wvkbd wtype wdisplays kanshi swayimg zathura zathura-ps zathura-pdf-poppler \
-  wlogout swaybg swaylock-effects swaylockd wlsunset sfwbar font-jetbrains-mono wezterm-fonts nwg-launchers lavalauncher wayvnc wf-recorder
+  wlogout swaybg swaylock-effects swaylockd wlsunset sfwbar font-jetbrains-mono wezterm-fonts nwg-launchers wayvnc wf-recorder
 mkdir -p /etc/xdg/labwc
 cat > /etc/xdg/labwc/autostart << EOF
 swaybg -c 000000 -o * &
